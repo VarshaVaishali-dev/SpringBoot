@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<head>
+	<meta charset="UTF-8">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<title>Weather Summary</title>
+</head>
+
+	<h1>Weather Summary</h1>
+	<table border="1">
+			<tr><td>City</td><td  align="middle"><h4 th:text="${WeatherSearchform.name}"></h4></td></tr>
+			<tr><td>tempreture</td><td  align="middle"><h4 th:text="${WeatherSearchform.temperature}"></h4></td></tr>
+			<tr><td>weatherDescription</td><td  align="middle"><h4 th:text="${WeatherSearchform.weatherDescription}"></h4></td></tr>
+			<tr><td>Sunrise</td><td  align="middle"><h4 th:text="${WeatherSearchform.sunrise}"></h4></td></tr>
+			<tr><td>Sunset</td><td  align="middle"><h4 th:text="${WeatherSearchform.sunset}"></h4></td></tr>
+			
+			
+			
+	</table>	
+
+	<button><a href="/weather_search">&nbsp;&nbsp;Back&nbsp;&nbsp;</a></button>
+
+
+
+</body>
+</html>
